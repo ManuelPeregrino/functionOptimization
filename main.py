@@ -1,10 +1,12 @@
 import tkinter as tk
 from tkinter import ttk
+from generatePopulation import GeneratePopulation
 
 class ParameterForm(tk.Tk):
     def __init__(self):
         super().__init__()
 
+        self.generatePopulation = GeneratePopulation.g
         self.title("Parameter Form")
 
         # Labels and Entries for each parameter
